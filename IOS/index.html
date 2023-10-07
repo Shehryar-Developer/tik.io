@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOS Application Development</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/64f20ca1a91e863a5c111883/1h98o2m41';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="transition:all 0.5s ease-in-out;">
+    <div class="container-fluid justify-content-center">
+      <a href="#"><img src="../home/spree1-removebg-preview.png" style="height: 5rem;" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <!-- <div> -->
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background: linear-gradient(309deg, rgb(0,0,0,0.9), rgb(0 36 101));">
+                <!-- <div class="container  d-flex">
+                  <div class="row"> -->
+                    <div class="d-md-flex flex-md-row flex-column">
+                      <div class="col-md">
+                        <h6 class="dropdown-header">Web Developement</h6>
+                        <a class="dropdown-item" href="../Custom/">Custom Website Design</a>
+                        <a class="dropdown-item" href="../Wordpress/">Wordpress</a>
+                        <a class="dropdown-item" href="../Ecom/">Ecommerce Website</a>
+                        <a class="dropdown-item" href="../Shopify/">Shopify</a>
+                        <!-- <a  class="dropdown-item" href="#">Woo-Commerce</a> -->
+                      </div>
+                      <div class="col-md">
+                        <h6 class="dropdown-header">Application Developement </h6>
+                        <a class="dropdown-item" href="../Android/">Android Application</a>
+                        <a class="dropdown-item" href="./">IOS Application</a>
+                      </div>
+                      <!-- <div class="col-md">
+                        <h6 class="dropdown-header">Brand Design</h6>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div> -->
+                    </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Packages/">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Combo-Packages/">Combo Packages</a>
+          </li>
+        </ul>
+       
+      </div>
+      <div class="col-md-4 flex-sm-wrap d-md-flex mail">
+        <div class="col-md-8" style="text-align:center;">
+          <i class="fas fa-envelope"></i> 
+          <a href="mailto:info@thespreedigital.com">info@thespreedigital.com</a>
+        </div>
+        <div class="col-md-4" style="text-align:center;">
+            <i class="fas fa-phone contact-icon"></i>
+            <a href="tel:+">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- sidebutton -->
+<div class="floatbutton">
+  <div class="btns_wrap">
+
+      <!-- <a href="javascript:;" class="chat_wrap" onclick="$zopim.livechat.window.toggle()">
+        <span class="icoo"><i class="fa fa-comment"></i></span>
+        <span>Chat With Us</span>
+      </a> -->
+      <a href="tel:+19177954201" class="call_wrap"> <span class="icoo">
+        <i class="fa fa-phone" style="color: blue;"></i></span>
+         <span> +1 917 795 4201</span> </a>
+  </div>
+</div>
+<!-- yes -->
+  
+  
+  <!-- home -->
+    <section class="big justify-content-center justify-content-between">
+      <!-- <div class="d-flex flex-row"> -->
+     <div class="cover flex-wrap" style="align-items: baseline;">
+      <div class="content col-md-6 flex-wrap justify-content-between justify-content-center align-items-center">
+        <!-- <h4 class="reveal">CUSTOM WEBSITE DEVELOPMENT SOLUTION</h4> -->
+        <h1 class="reveal" style="font-weight: 900;"><strong>iphone App Development</strong></h1>
+        <!-- <h1 class="reveal">A</h1> -->
+        <p class="reveal1" style="font-size: x-large;">
+          With a knack for excellence, we create innovative iOS applications that resonate with your brand and audience. Using cutting-edge tools, we ensure stunning visuals and seamless functionality.
+
+Our comprehensive iOS mobile application development services position you ahead of the competition. We craft apps embodying your brand, integrating the latest iOS tech for efficiency, security, and scalability.
+
+        </p>
+        <div class="hov1 text-center " style="display: flex; margin: auto;">
+            <a class="btnwrp" href="../Convo/">BUILD MY IOS APP</a>
+        </div>
+    </div>
+
+  <div class="form col-md-6">
+    <div class="filling ">
+        <div class="header d-flex justify-content-between justify-content-center align-items-center">
+            <div>
+                <!-- <span>Avail 50% OFF</span> -->
+                <h3>Book a Free <br><span>Consultation!!!</span></h3>
+            </div>
+            <!-- <img  class="mx-2"  style="width: 10rem;height:6rem;" src="./home/widget.webp" alt=""> -->
+        </div>
+        <form class="col-md-12">
+            <div class="d-flex col-md-12 flex-wrap justify-content-center align-items-center">
+                <input class="input1 col-md-12" type="text" id="name" name="name" placeholder="Name" class="required" onkeyup="validateName(this)" onkeydown="return alphaOnly(event)" required>
+                <input class="input2 col-md-12" type="Email" id="email" name="email" placeholder="Email" onkeyup="emailValidation(this)" onkeypress="emailValidation(this)" class="required" required="">     
+            </div>
+            <div class="col-md-12 align-items-center">
+                <input class="input3 col-md-12" type="number" name="phone" id="number" class="phone-count maskin contact" placeholder="Phone*" onkeypress="return isNumber(event)" data-inputmask="'mask': '(999) 999-9999'" onkeyup="noAlphabet(this)" required="">
+            </div>
+            <div class="col-md-12">
+              <input class="input4 col-md-12"  type="message" name="brief" id="message" placeholder="Talk About Your Project" class="required" required="">
+            </div>
+            <div class="input-field">
+              <input type="submit" value="Let's get Started">
+            </div>
+        </form>
+    </div>
+  </div>
+     </div>
+</section>
+
+<!-- sidebar -->
+<div class="sidebar-form">
+  <div class="call-action">
+    <span>LET'S GET STARTED</span>
+  </div>
+  <h3>AVAIL 50% OFF. Let's Get Started<br>Exclusive Offer</h3>
+  <form action="">
+      <div class="form-group">
+        <input type="text" name="" id="" class="form-control" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <input type="email" name="" id="" class="form-control" placeholder="Enter email here">
+      </div>
+      <div class="form-group">
+        <input type="email" name="" id="" class="form-control" placeholder="Phone Number">
+       </div>
+       <div class="form-group">
+        
+        <!-- <label for="exampleFormControlSelect1">Select Service</label> -->
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option value="" disabled selected>Select Service</option>
+              <option>Website Design & Dev</option>
+              <option>UI/UX Design</option>
+              <option>Mobile App Design & Dev</option>
+              <option>Enterprise Application</option>
+              <option>Web and App Upgradation & Maintenance</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Talk About Your Project"></textarea>
+      </div>
+    
+       <input type="submit" value="Submit" id="submit-btn" name="" id="">
+
+   </form>
+
+</div>
+
+<!--usp -->
+<section class="USP" style="color: white;">
+  <div class="cover flex-wrap" style="line-height: 2rem;">
+    <!-- <div class="d-flex"> -->
+      <div class="content col-md-6">
+        <!-- <h6><span>OUR USP</span></h6> -->
+        <h1>Iphone Application Development Company</h1>
+        <h4>That Turns Your App Vision into Reality</h4>
+        <p>Our iOS app developers take your idea and convert it into a full-fledged iOS application that is super impressive from the get-go.</p>
+        <p>Leveraging our technical expertise and agile methodologies, we can accelerate the iOS application development process to get your app to the market within the given time.</p>
+        <div class="hov1" style="display: flex; ">
+          <a class="btnwrp" href="../INFO/">Connect for Expert Advice</a>
+      </div>
+      </div>
+    
+      <div class="col-md-6 justify-content-center align-items-center" style="margin:auto;" >
+        <h3 class="text-center" style="background: linear-gradient(to right,#303F9F 0%,#FFFDE7 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;">Exclusive</h3>
+     <div class="domains  col-md-12 d-flex">
+        <div class="fcol">
+          <ul>
+              <li><a href=""></a>Automotive</li>
+              <li><a href=""></a>Ecommerce</li>
+              <li><a href=""></a>Real Estate</li>
+              <li><a href=""></a>IT Staff</li>
+              </ul>
+        </div>
+        <div class="scol">
+          <ul>
+              <li><a href=""></a>Health Care</li>
+              <li><a href=""></a>On-Demand</li>
+              <li><a href=""></a>Music</li>
+              </ul>
+        </div>
+      </div>
+      </div>
+    <!-- </div> -->
+  </div>
+
+
+</section>
+
+<!-- USP -->
+<!-- iphone -->
+<section class="app"> 
+  <!-- <div class="flex-wrap"> -->
+    <div class="d-flex flex-wrap">
+      <div class="col-md-5">
+        <img src="../home/app.webp" class="img-fluid" alt="">
+      </div>
+      <div class="col-md-7" style="padding: 3rem;">
+        <h1><strong>Custom Web Design for iOS App Development</strong></h1>
+        <!-- <h4>We Employ Only the Top 1% of iPhone App Developers</h4> -->
+        <!-- <p>We boast of having the finest iPhone app developers that challenge the boundaries and go above and beyond to deliver UX-focused iOS applications built keeping the ROI in mind.
+        </p> -->
+        <!-- <p>Whether choosing the right technology stack for your iOS app development project or implementing agile development methodology at the core, we have got you covered!
+        </p> -->
+        <p>Are you looking for reliable and quality mobile app development services? Look no further! Our team of expert developers will provide you with custom web design solutions that are tailored to fit your needs.
+        </p>
+        <p class="d-none d-sm-block">We understand the importance of creating an intuitive user experience for both desktop and mobile applications. That's why we specialize in developing secure and robust web designs for iOS apps. With our advanced solutions, you'll be able to optimize your website's performance and load times, while also ensuring user satisfaction.
+        </p>
+        <ul class="d-lg-none d-sm-block">
+          <li>We understand conventional and emerging technologies and their use cases
+          </li>
+          <li>
+            We know how to ensure robust performance and scalability of digital assets
+          </li>
+          <li>We have a team of the top 1% iPhone app developers and Q&A engineers. Our sprint sessions ensure quality products before delivery.
+          </li>
+          <li>We enable organizations to meet their customers' ever-evolving manifest and latent needs.
+          </li>
+          <li>We build apps that deliver great experiences to users instead of just features.
+          </li>
+        </ul>
+      </div>
+    </div>
+  <!-- </div> -->
+</section>
+
+<!-- why us -->
+<section class="let" >
+  <div class="talk d-flex flex-wrap col-md-12">
+    <div class="col-md-6 tal reveal text-center" >
+      <h6>LET'S TALK</h6>
+      <h4>Got an idea?</h4>
+      <h4>Let's get in touch!</h4>
+      <p>Let' discuss your project and find out what we can do to provide value.</p>
+    </div>
+    <div class="col-md-6 idea">
+      <form action="" class="col-md-12" style="color:white;">
+        <h5 class="col-md-12 text-center"><span>I am interested in discussing ideas with you for</span></h5>
+        <div class="d-flex justify-content-center align-items-center col-md-12  m-1 flex-wrap">
+          <div class="form-group col-md-4 m-1">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option value="" disabled selected>Select Service</option>
+              <option>Website Design & Dev</option>
+              <option>UI/UX Design</option>
+              <option>Mobile App Design & Dev</option>
+              <option>Enterprise Application</option>
+              <option>Web and App Upgradation & Maintenance</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4 m-1">
+            <input class="form-control" type="text" name="" placeholder="Your Full Name" id="">
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center col-md-12 m-1 flex-wrap" style="color:white;">
+          <div class="form-group m-1">
+            <input class="form-control" type="email" name="" placeholder="Your Email Address" id="">
+          </div>
+          <div class="form-group m-1">
+            <input class="form-control" type="number" name="" placeholder="Your Phone Number" id="">
+          </div>
+        </div>
+        <div class="hov1 col-mdfa-rotate-180 d-flex col-md-12" style="justify-content: center;">
+          <a class="btnwrp" href="../Pages/info.html">Submit</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- END -->
+<section class="end wall">
+  <div class="justify-content-center align-items-center flex-wrap" style="margin-left:2rem;margin-right:2rem;">
+    <div class="top-end col-md-12 text-center">
+      <!-- <h6><span>END-TO-END SERVICES</span></h6> -->
+      <h1><span><strong>Start-to-end app development agency</strong></span></h1>
+      <p style="display:inline-block;font-size: larger;" class="col-md-6">This mobile app development agency is all in. We provide app design and app development services for every stage of your mobile project.
+      </p>
+    </div>
+    <div class="bottom-end  flex-wrap col-md-12 flex-wrap">
+        
+      <div class="d-flex  align-items-center flex-wrap" style="justify-content: space-around;">
+        <div class="col-md-4 bux d-flex">
+          <div>
+            <!-- <i class="fa-thin fa-megaphone fa-flip" style="color: #ffffff;"></i> -->
+            <img src="../home/market.png" class="img-fluid" alt="">
+          </div>
+          <div>
+            <h4 class="text-center">Product and Market Strategy</h4>
+           <p class="text-center">Our team of agile thinkers is made up of specialists in every area of the mobile application lifecycle. We’re able to translate the market and user data into effective strategies that bring you closer to your business goals.
+          </div>
+          </p>
+        </div>
+  
+        <div class="col-md-4 bux d-flex">
+          <div >
+            <img src="../home/ui.png" class="img-fluid" alt="">
+          </div>
+          <div>
+            <h4 class="text-center">UI/UX Design </h4>
+            <p class="text-center">We’ve got a user-centered mobile app design philosophy that guides our every creative move. Our app design department is specialized in decoding the user’s wants and needs, making for well-informed UI and UX decisions.
+            </p>
+            </div>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center flex-wrap" style="justify-content: space-around;">
+        <div class="col-md-4 bux d-flex">
+          <div>
+            <img src="../home/native.png" class="img-fluid" alt="">
+          </div>
+          <div>
+            <h4 class="text-center">Native App Development</h4>
+            <p class="text-center">We develop high-quality iOS apps and Android mobile applications, and we do it well. Our apps are intuitive, engaging and scalable, while our engineering is based on agile development methodologies to ensure an efficient and effective collaboration.
+            </p>
+          </div>
+        </div>
+  
+        <div class="col-md-4 bux d-flex">
+          <div>
+            <img src="../home/qa.webp" class="img-fluid" alt="">
+          </div>
+          <div>
+            <h4 class="text-center">QA and Testing</h4>
+            <p class="text-center">We'll be tapping, swiping and pushing until every last bug is fixed. We'll make sure that your mobile app is in top shape for its app store launch and that it will make good on its promise.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="hov1 col-md-12 d-flex" style=" justify-content: center;">
+      <a class="btnwrp" href="../Convo/">App Development Services</a>
+    </div>
+  </div>
+</section>
+
+
+<section class="before reveal" style="background: none;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <form class="col-md-12 col-sm-12 ml-auto mr-auto" action="" style="font-size: x-large;">
+          <h1>We love to hear from you</h1>
+          <p>Heads up! We require that you sign up for proficient tech inc services and packages. We make all your dreams come true in a successful project.</p>
+          <div class="form-group">
+            <input class="form-control" type="text" name="" id="" placeholder="Name" required="">
+          </div>
+          <div class="form-group d-flex">
+            <input class="form-control mr-2" type="email" required="" placeholder="Email">
+            <input class="form-control" type="tel" name="" id="" placeholder="Phone Number">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Comments" type="comment" id="" cols="30" rows="7"></textarea>
+          </div>
+          <input class="btn btn-primary" type="submit" value="Submit">
+        </form>
+      </div>
+   
+    </div>
+  </div>
+</section>
+
+<!-- faqs -->
+<section>
+  <div class="gira col-md-12">
+    <div class="col-md-6 d-flex  align-items-center content active" style="padding-top: 3rem;">
+      <div>
+        <h5>Frequently Asked Questions</h5>
+        <h1>Everything You Need To Know About How We Make Android Apps</h1>
+      </div>
+     </div>
+  <div class="accordion accordion-flush col-md-12 col-sm-12" id="accordionFlushExample">
+     <div class="accordion-item">  
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          How long does it take to develop an iOS app?
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Building an iOS app usually takes between 4 – 6 months. However, the development time depends primarily on the nature of the app and the iOS app development company you are partnering with. At TekRevol, we offer custom pricing and development plans tailored to the needs and goals of the stakeholders. Let’s book your free discovery call today and get personalized estimates and deadlines on the go.
+          </div>
+     </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button  class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          What is the cost of developing an iOS app?
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body" >TSimilar to the development time, the cost of building an iOS app primarily depends on the iOS development company you partner with. At TekRevol, we offer flexible and cost-effective iOS app development services with guaranteed on-time delivery and post-maintenance services.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Does SpreeDigital offer a free consultation or qoute for iOS app development?    
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          Yes.SpreeDigital offers free consultation sessions for iOS app development services where our expert consultants gather requirements from potential clients and help them create a project development roadmap with estimated deadlines and pricing plans.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingFourth">
+        <button  class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourth" aria-expanded="false" aria-controls="flush-collapseFourth">
+          Do you have experience developing apps for specific industries or niches?
+        </button>
+      </h2>
+      <div id="flush-collapseFourth" class="accordion-collapse collapse" aria-labelledby="flush-headingFourth" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          We have experience building both iOS and Android apps in multiple niches, including healthcare, fintech, retail, automotive, real estate, music and entertainment, ecommerce, on-demand, and academics.
+        </div>
+      </div>   
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- footer -->
+<footer class="flex-wrap">
+  <div class="footer-top">
+   <div class="d-flex flex-wrap " style="margin-left:4rem;">
+    <div class="col rev">
+      <div class="heading">Development</div>
+      <ul style="list-style: none;">
+        <a href="#"><li>Custom/Word Press</li></a>
+        <a href="#"><li>Commerce</li></a>
+        <a href="#"><li>Shopify</li></a>
+        <a href="#"><li>Woo Commerce</li></a>
+        <a href="#"><li>Web app</li></a>
+      </ul>
+    </div>
+    <div class="col rev ">
+      <div class="heading">Web content</div>
+        <ul style="list-style: none;">
+          <a href="#"><li>Web Page Copy</li></a>
+          <a href="#"><li>White Papers</li></a>
+          <a href="#"><li>Product Description</li></a>
+        </ul>
+    </div>
+    <div class="col rev">
+      <div class="heading">Branding</div>
+        <ul style="list-style: none;">
+          <a href="#"><li>Logo Design</li></a>
+          <a href="#"><li>Brand Identity</li></a>
+          <a href="#"><li>Brochure Design</li></a>
+        </ul>
+    </div>
+    <div class="col rev">
+      <div class="heading">Resources</div>
+        <ul style="list-style-type: none;">
+          <a href="#"><li>Pricing</li></a>
+          <a href="#"><li>Company</li></a>
+        </ul>
+      </div>
+    <div class="col rev">
+      <div class="heading">SUPPORT </div>
+        <ul style="list-style-type:none;">
+          <li>Contact</li>
+          <li>Faqs</li>
+          <li>Sitemap</li>
+        </ul>
+      </div>
+   </div>
+  </div>
+  <!-- <hr> -->
+  <div class="footer-center">
+   <div class="br d-flex flex-wrap">
+    <div class="col-md-4 rev text-center">
+      <h3 class="heading" style="margin: 1rem 0rem 0rem 0rem !important;">UNITED STATES</h3>
+      <p class="col-md-9 m-auto">1199 Martin Luther King Jr Way Oakland, California
+        +1 (888) 3639727</p>
+    </div>
+    <div class="col-md-3 d-flex align-items-center rev ">
+      <div class="divm"><img src="../home/card-brands.webp" alt=""></div>
+    </div>
+    <div class="col-md-4 rev" style="margin-left: auto; margin-right: auto;">
+      <div class="buttons d-flex">
+        <div class="cht1">
+          <a class="btnwrp" style="background: white !important; color:black;" href="../INFO/">Contact Us</a>
+      </div>
+        <div class="hov1">
+          <a class="btnwrp" href="../Convo/">Get Started</a>
+      </div>
+      </div>
+      <div class="icons d-flex">
+        <div><a href="#"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a></div>
+        <div><a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></div>
+        <div><a href="#"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></a></div>
+        <div><a href="#"><i class="fa-brands fa-square-threads" style="color: #ffffff;"></i></a></div>
+
+      </div>
+    </div>
+   </div>
+
+  </div>
+  <!-- <hr> -->
+  <div class="footer-bottom ">
+    <div class="flex-wrap  d-flex justify-content-around">
+      <div class="col-md-6" style="padding-left: 4rem;">
+        <p>Copyright to amzifysolutions</p>
+        <p>
+          <b>Made By: SpreeDigital Developers</b>
+        </p>
+      </div>
+      <div class="col-md-6 " style="padding-right: 4rem; display: contents;">
+       <a href="#" style="text-decoration: none;"><p>Terms of Use</p></a>
+       <a href="#" style="text-decoration: none;"><p>Privacy Policy</p></a>
+      </div>
+     </div>
+  </div>
+</footer>
+<script src="../js/confetti.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./co"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("KQgJ_SiinY1cytboO");
+})();
+</script>
+  </body>
+</html> 

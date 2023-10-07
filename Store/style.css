@@ -1,0 +1,346 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Calibri", Arial, sans-serif !important;
+    font-size: 17px;
+    color: #242424;
+    
+}
+/* a{
+    text-decoration: none !important;
+} */
+.navbar {
+    transition: background-color 0.5s ease-in-out;
+    background-color: transparent;
+  }
+  
+  .navbar.scrolled {
+    background-color: white;
+    height: 5rem !important;
+  }
+  
+.height{
+    top:0 !important;
+}
+
+.navbar .containe
+
+nav {
+    background: none;
+}
+.container-fluid{
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar.bg-body-tertiary {
+    background-color: transparent !important;
+}
+
+nav a{
+    color:black !important;
+}
+nav .logo a {
+    text-decoration: none;
+}
+.logo .u {
+    color: #de1054;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.logo .k {
+    color: #5b57f4;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+nav .desk{
+    /* padding: 0.5rem 0rem 0.5rem 0rem; */
+    border-radius: 1rem;
+    border: solid white;
+    font-size: 22px;
+}
+.logo a img{
+    top: 2rem;
+    height: 5rem;
+    left: 8rem;
+    width: 4rem;
+    position: absolute;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    /* border-radius: 1rem; */
+    /* border: solid; */
+    font-size: larger;
+}
+nav .dropdown-menu ul li a{
+    text-decoration:none;
+  }
+  nav .dropdown-menu ul li a:hover{
+    text-decoration: underline;
+  }
+  nav .dropdown-menu ul li{
+    padding: 5px 0px 5px 0px;
+    width: 11rem;
+    font-size: larger;
+    text-align: left;
+  }
+  .navbar-nav .nav-item .nav-link:hover{
+    text-decoration: underline;
+  }
+
+  .navbar .nav-item.dropdown .dropdown-menu {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px); /* Initial position, move up */
+    margin-top: 20px; /* Initial margin-top, move up */
+    transition: transform 0.8s ease;
+}
+
+/* Apply the animation when hovering over the Flights nav-link */
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); /* Final position, no translation */
+    margin-top: 0; /* Final margin-top, no margin */
+}
+.form {
+    padding: 22rem 4rem 2rem 8rem;
+    /* background: url(./cover.jpg); */
+    background-image: url(./cover.jpg);
+    background-size: 20%;
+    color: white;
+}
+.form{
+    background: url(./cover.jpg);
+}
+/* .form .content {
+    margin: auto;
+    padding: 12rem 3rem 5rem 5rem;
+    text-align: left;
+}
+.form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-right: 0.5rem;
+    padding-left: 1.5em;
+    margin-bottom: 0rem;
+} */
+.form .options{
+    border:solid grey ; 
+    color:black;
+}
+.form .options ul li{
+    text-align: center;
+    border:solid grey 1px;
+    cursor: pointer;
+    color:grey;
+}
+.form .options ul  {
+    padding: 0rem;
+}
+.form .options ul li:hover{
+    text-align: center;
+    border:solid grey 1px;
+    cursor: pointer;
+       box-shadow:rgba(grey , green, blue, alpha) ;
+    box-shadow: -5px 0 5px rgba(128, 128, 128, 0.5), 5px 0 5px rgba(128, 128, 128, 0.5);
+} 
+
+.form .options ul li a{
+    text-decoration: none;
+    justify-content: center;
+    color:grey
+}
+.form .options ul li a img{
+    width: 2rem;
+    opacity: 0.3;
+}
+
+.form .options ul li a:focus{
+    transform: scaleZ(5);
+    /* opacity: 1; */
+    color:black;
+    border-bottom: red solid 5px;
+}
+.form .options ul li a img:focus{
+    /* width: 2rem; */
+    opacity: 1  ;
+}
+.form .options ul li{
+    align-items: center;
+    display: grid;
+}
+.h4, h4{
+    font-size: 23px !important;
+}
+  .active-item {
+    border-bottom: 2px solid red;
+  }
+
+.icons img{
+    width: 2rem;
+    height: 2rem;
+}
+/* travelled */
+.travelled{
+    background: #f0f3fa
+}
+.travelled .content{
+    width: 86%;
+    /* justify-content: left; */
+    margin: auto;
+    justify-content: space-between;
+    padding: 1rem 0rem 0rem 0rem;
+}
+.travelled .header{
+    width: 86%;
+    /* justify-content: left; */
+    margin: auto;
+    justify-content: space-between;
+    padding:4rem 0rem 4rem 0rem;
+}
+.plan{
+    border-radius: 3%;
+    background: white;
+}
+.travelled .fare {
+    width: 86%;
+    /* justify-content: left; */
+    margin: auto;
+    justify-content: space-between;
+    padding: 0rem 0rem 0rem 0rem;
+}
+.travelled .fare a{
+    background: #0057ff;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 11px;
+    border-radius: 10%;
+    border: solid none none;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    display: inline-grid;
+
+}
+
+
+/* business */
+.business .img-style img{
+    padding: 1rem;
+    opacity: 0.9;
+    border-radius: 30px;
+    width: 100%;
+    height: 43rem
+}
+.business .content{
+    z-index:2;
+    top:0;
+}
+.business .content{
+    padding:17%;
+    
+}
+.business .content a{
+    display: inline-block;
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    background: #ff7d4b;
+    border-radius: 13%;
+}
+
+.business h2{
+    font-style: italic;
+    font-weight: 500;
+    color:orange;
+    font-weight: bold;
+}
+.business h1{
+    font-size: 4rem !important;
+    color:white;
+}
+
+/*  */
+/* media */
+@media (max-width: 767px) {
+    .custom-hidden {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .custom-hidden {
+        display: block;
+    }
+}
+
+.custom-input {
+    position: relative;
+}
+.form input ul{
+    display: block;
+}
+.custom-options {
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.custom-options li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;;
+}
+.custom-options li img{
+    height: 2rem;
+}
+.custom-options li:hover {
+    background-color: #f0f0f0;
+}
+
+.heading-h5 {
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    width: 100%;
+    margin-left: 2rem;
+}
+.business span{
+    background: #fff;
+    float: right;
+    padding: 0px;
+    /* margin: 0.1px; */
+}
+.line{
+    text-decoration: none;
+}
+
+.line:hover{
+    text-decoration: underline !important;
+}
+
+.accordion{
+    --bs-accordion-bg:#f0f3fa !important ;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: none;
+    outline: 0;
+    box-shadow:none !important;
+}
+.accordion-button:not(.collapsed) {
+    color:black !important;
+    background-color:#f0f3fa !important;
+    box-shadow: none !important;
+}
+.accordion-body {
+    padding:0 !important;
+}

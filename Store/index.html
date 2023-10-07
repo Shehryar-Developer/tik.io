@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></head>
+    <link rel="stylesheet" href="https://cdn.example.com/widget-library.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+   <style>
+        .bg-cp{
+            background-color: #d3d6db;
+        }
+        .fs-7{
+            font-size: 15px;
+        }
+        .fs-8{
+            font-size: 13px;
+        }
+        /* .inp-width{
+            width: 240px;
+        } */
+        .inp-height{
+            height: 52px;
+        }
+        .date-wid{
+            width: 180px;
+        }
+    </style>
+<body>
+   <!-- <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+            <img src="./logo.png" alt="">
+            <div class="d-none d-xl-flex align-items-center">
+                <p class="fw-bold m-0">Login </p>
+                <input type="text" placeholder="ENGLISH (UK)" class="form-control mx-2">
+                <div class="btn btn-outline-primary fw-bold">Login</div>
+            </div>
+        </div>
+        <div class="btn btn-dark fw-bold">Flights</div>
+        <div class="btn btn-primary fw-bold">Hotels</div>
+        <div class="btn btn-primary fw-bold">Car Hire</div>
+   </div>  -->
+   <!-- header -->
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="transition:all 0.5s ease-in-out; height:9rem ;">
+    <div class="container-fluid justify-content-center bg-white col-md-10 desk">
+        <div class="logo">
+            <a href=".">
+                <img id="2" src="./logo.png"  alt="">
+                <span class="d-md-inline-block d-none" style="padding-left:4rem">travelhouse<span class="u">u</span><span class="k">k</span></span>             </a>
+        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse px-1" style="height:3rem; font-size: smaller;" id="navbarNavDropdown">
+        <ul class="navbar-nav navbar-right" class="align-items-center">
+            <li class="nav-item dropdown m-1">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Flights
+                </a>
+                <!-- <div> -->
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                    <!-- <div class="container  d-flex">
+                      <div class="row"> -->
+                        <div class="d-md-flex flex-md-row flex-column">
+                          <div class="col-md">
+                            <ul style="list-style-type: none;" >
+                                <li><a href="flights/"><b>Cheap Flights</b></a></li>
+                                <li><a href="flights/business-class.htm"><b>Business Class Flights</b></a></li>
+                                <li><a href="flights/australia/">Flights to Australia</a></li>
+                                <li><a href="flights/asia/india.htm">Flights to India</a></li>
+                                <li><a href="cheap-flights-to/ghana/">Flights to Ghana</a></li>
+                                <li><a href="flights/africa/nigeria.htm">Flights to Nigeria</a></li>
+                                <li><a href="flights/asia/pakistan.htm">Flights to Pakistan</a></li>
+                                <li><a href="flights/asia/philippines.htm">Flights to Philippines</a></li>
+                                <li><a href="cheap-flights-to/south-africa/">Flights to South Africa</a></li>
+                                <li><a href="cheap-flights-to/zimbabwe/">Flights to Zimbabwe</a></li>
+                            </ul>
+                            <!-- <a  class="dropdown-item" href="#">Woo-Commerce</a> -->
+                          </div>
+                          <!-- <div class="col-md">
+                            <h6 class="dropdown-header">Brand Design</h6>
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div> -->
+                        </div>
+                </div>
+              </li>
+            <li class="nav-item m-1">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown m-1">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Trending
+            </a>
+            <!-- <div> -->
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                <!-- <div class="container  d-flex">
+                  <div class="row"> -->
+                    <div class="d-md-flex flex-md-row flex-column">
+                      <div class="col-md">
+                        <ul style="list-style-type: none;">
+                            <li><a href="cheap-flights-to/accra/">Flights to Accra</a></li>
+                            <li><a href="flights/australia/brisbane.htm">Flights to Brisbane</a></li>
+                            <li><a href="cheap-flights-to/dubai/">Flights to Dubai</a></li>
+                            <li><a href="flights/africa/harare.htm">Flights to Harare</a></li>
+                            <li><a href="cheap-flights-to/islamabad.htm">Flights to Islamabad</a></li>
+                            <li><a href="flights/africa/johannesburg.htm">Flights to Johannesburg</a></li>
+                            <li><a href="flights/usa/new-york.htm">Flights to New York</a></li>
+                            <li><a href="flights/australia/perth.htm">Flights to Perth</a></li>
+                        </ul>
+                        <!-- <a  class="dropdown-item" href="#">Woo-Commerce</a> -->
+                      </div>
+                      <!-- <div class="col-md">
+                        <h6 class="dropdown-header">Brand Design</h6>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div> -->
+                    </div>
+            </div>
+          </li>
+          <li class="nav-item m-1">
+            <a class="nav-link" href="./Packages/">Packages</a>
+          </li>
+          <li class="nav-item dropdown m-1">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                More
+            </a>
+            <!-- <div> -->
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                <!-- <div class="container  d-flex">
+                  <div class="row"> -->
+                    <div class="d-md-flex flex-md-row flex-column">
+                      <div class="col-md">
+                        <ul style="list-style-type: none;">
+                            <li><a href="book-now-pay-later.htm"><b>Book Now Pay Later<br>Payment Options</b></a></li>
+                            <li><a href="call-me-back.htm"><b>Call me Back</b></a></li>
+                            <li><a href="news/">Blog</a></li>
+                        </ul>
+                        <!-- <a  class="dropdown-item" href="#">Woo-Commerce</a> -->
+                      </div>
+                      <!-- <div class="col-md">
+                        <h6 class="dropdown-header">Brand Design</h6>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div> -->
+                    </div>
+            </div>
+          </li>
+          <li style="align-items: center;display: flex;">
+			<a class="nav-link" href="tel:00442037455784">
+				<img class="me-1" src="./call.png" alt=""><b class="top-call"> 020 3745 5784</b>
+			</a>
+		</li>
+        </ul>
+    </div>
+    </div>
+  </nav>
+   <!-- header end -->
+
+  <section class="form">
+        <div class="bg-white">
+            <div class="options ">
+                <div class="col-md-12 justify-content-center align-items-center">
+                    <ul class="d-md-flex d- flex-wrap col-md-12" style="list-style-type: none;">
+                        <li class=" col-md-3 scalable-item align-items-center">
+                            <a href="#" class="d-flex" onclick="toggleActive(this)">
+                            <div>
+                                <img src="./plane.png" class="img-fluid mx-1" alt="">
+                            </div>
+                            <h4>Search flights</h4>
+                            </a>
+                        </li>
+                        <li  class=" col-md-3  scalable-item align-items-center">
+                            <a href="#" class="d-flex">
+                                <div>
+                                    <img src="./price-tag.png" class="img-fluid mx-1" style="width:25px !important;" alt="">
+                                </div>
+                                <h4>Manage booking/Check in</h4>
+                            </a>
+                        </li>
+                        <li  class="col-md-3  scalable-item  align-items-center">
+                            <a href="#" class="d-flex">
+                                <div>
+                                    <img src="./placeholder.png" class="img-fluid mx-1" style="width:25px !important;" alt="">
+                                </div>
+                                <h4> What's on your flights</h4>
+                            </a>
+                        </li>
+                        <li  class="col-md-3 scalable-item  align-items-center">
+                            <a href="#" class="d-flex">
+                            <div>
+                                <img src="./clock.png" class="img-fluid mx-1" style="width:25px !important;" alt="">
+                            </div>
+                            <h4>Flight Status</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12 justify-content-center align-items-center">
+                    <form action="" class="col-md-12">
+                        <div class="custom-dropdown">
+                            <div class="custom-input">
+                              <input  type="text"  onclick="toggleDropdown()" placeholder="Select an airport">
+                            </div>
+                            <ul class="custom-options">
+                                <li class="d-flex" data-value="Alice Arm/Silver City Water Aerodrome(TC: CAC3)">
+                                    <span value="Alice Arm, British Columbia, Canada">Alice Arm, British Columbia, Canada</span>
+                                    <div>
+                                        <img src="./united-kingdom.png" class="img-fluid" alt="">
+                                    </div>
+                                </li>
+                                <li class="d-flex" data-value="York Landing Airport">
+                                        <span>York Landing, Manitoba, Canada</span>
+                                        <div>
+                                            <img src="./united-kingdom.png" class="img-fluid" alt="">
+                                        </div>
+                                    </li>
+                                </li>
+                                <li class="d-flex" data-value="York Landing Airport">
+                                <span>York Landing, Manitoba, Canada</span>
+                                <div>
+                                    <img src="./united-kingdom.png" class="img-fluid" alt="">
+                                    </div>
+                                </li>
+                                    <!-- Add more custom options here -->
+                            </ul>
+                          </div>
+                          
+                        <!-- <div class="col-md-5 text-left p-4">
+                            <input class="form-control inp-height inp-width" list="datalistOptions" id="exampleDataList" placeholder="Departure Airport">
+                              <datalist id="datalistOptions">
+                                <option value="Alice Arm/Silver City Water Aerodrome(TC: CAC3)">Alice Arm, British Columbia, Canada</option>
+                                 <option  value="York Landing Airport"  data-image="./united-kingdom.png">York Landing, Manitoba, Canada</option>
+                                <option value="Zadar Airport">Zadar, Croatia</option>
+                                <option value="Franjo Tuđman Airport">Zagreb, Croatia</option>
+                                <option value="Zahedan Airport">Zahedan, Iran</option>
+                                <option value="Zaranj Airport">Zaranj, Afghanistan</option>
+                                <option value="Pichoy Airport">Valdivia, Chile</option>
+                                <option value="Zamboanga International Airport">Zamboanga City, Philippines</option>
+                                <option value="Cahors - Lalbenque Airport">Cahors, Midi-Pyrénées, France</option>
+                                <option value="Zaria Airport">Zaria, Nigeria</option>
+                                <option value="Zhaotong Airport">Zhaotong, Yunnan, China</option>
+                                <option value="Zaragoza Airport">Zaragoza, Aragon, Spain</option>
+                                <option value="Zábřeh Airport">Dolní Benešov, Czech Republic</option>
+                                <option value="Bathurst Airport">Bathurst, New Brunswick, Canada</option>
+                                <option value="Žabljak Airport">Žabljak, Montenegro</option>
+                                <option value="Biloela Airport">Biloela, Queensland, Australia</option>
+                                <option value="Roland-Désourdy Airport">Bromont, Quebec, Canada</option>
+                                <option value="Bowen Airport">Bowen, Queensland, Australia</option>
+                                <option value="Konarak Airport">Chabahar (Chah Bahar), Iran</option>
+                                <option value="Sayaboury Airport">Sainyabuli (Sayaboury), Laos</option>
+                                <option value="General Leobardo C. Ruiz International Airport">Zacatecas City, Zacatecas, Mexico</option>
+                                <option value="La Araucanía Airport">Temuco, Chile</option>
+                                <option value="Bern Railway Station">Bern, Switzerland</option>
+                                <option value="Dalma Airport">Dalma Island (Delma Island), United Arab Emirates</option>
+                                <option value="Secunda Airport">Secunda, South Africa</option>
+                                <option value="Senggo Airport">Senggo, Indonesia</option>
+                                <option value="Bella Bella (Campbell Island) Airport">Bella Bella, British Columbia, Canada</option>
+                                <option value="Eastmain River Airport">Eastmain, Quebec, Canada</option>
+                                <option value="Zenag Airport[1]">Zenag, Papua New Guinea</option>
+                                <option value="Zero Airport (Ziro Airport)">Ziro, Arunachal Pradesh, India</option>
+                                <option value="Faro Airport">Faro, Yukon, Canada</option>
+                                <option value="Fond-du-Lac Airport">Fond-du-Lac, Saskatchewan, Canada</option>
+                                <option value="Fort McPherson Airport">Fort McPherson, Northwest Territories, Canada</option>
+                                <option value="Tulita Airport">Tulita, Northwest Territories, Canada</option>
+                                <option value="Fairview Airport(TC: CEB5)">Fairview, Alberta, Canada</option>
+                                <option value="Grand Forks Airport">Grand Forks, British Columbia, Canada</option>
+                                <option value="Gods River Airport">Gods River, Manitoba, Canada</option>
+                                <option value="South Galway Airport">South Galway Station, Queensland, Australia</option>
+                                <option value="Ngoma Airport">Ngoma, Zambia</option>
+                                <option value="Little Grand Rapids Airport">Little Grand Rapids, Manitoba, Canada</option>
+                                <option value="La Romaine Airport(TC: CTT5)">La Romaine, Quebec, Canada</option>
+                                <option value="Gaua Airport">Gaua, Vanuatu</option>
+                                <option value="Zhanjiang Wuchuan Airport">Zhanjiang, Guangdong, China</option>
+                                <option value="Shamshernagar Airport">Shamshernagar, Bangladesh</option>
+                                <option value="High Prairie Airport">High Prairie, Alberta, Canada</option>
+                                <option value="Geneva Railway Station">Geneva, Switzerland</option>
+                                <option value="Zhongwei Shapotou Airport(Zhongwei Xiangshan Airport)">Zhongwei, Ningxia, China</option>
+                                <option value="Ramenskoye Airport[1](Zhukovsky Airport)">Zhukovsky, Moscow Oblast, Russia</option>
+                                <option value="Victoria Airport">Victoria, Chile</option>
+                                <option value="Ziguinchor Airport">Ziguinchor, Senegal</option>
+                                <option value="Ixtapa-Zihuatanejo International Airport">Ixtapa/Zihuatanejo, Guerrero, Mexico</option>
+                                <option value="Alzintan Airport[1]">Zintan, Libya</option>
+                                <option value="Zhigansk Airport[1]">Zhigansk, Yakutia, Russia</option>
+                                <option value="Zamzama Airport[1]">Zamzama, Pakistan</option>
+                                <option value="Jenpeg Airport">Jenpeg, Manitoba, Canada</option>
+                                <option value="Swan River Airport">Swan River, Manitoba, Canada</option>
+                                <option value="Tanjung Pelepas Port Airport[1]">Tanjung Pelepas, Johor, Malaysia</option>
+                                <option value="Kasaba Bay Airport">Kasaba Bay, Zambia</option>
+                                <option value="Kashechewan Airport">Kashechewan, Ontario, Canada</option>
+                                <option value="Kegaska Airport(TC: CTK6)">Kegaska (Kegashka), Quebec, Canada</option>
+                                <option value="Zyryanka Airport">Zyryanka, Yakutia, Russia</option>
+                                <option value="Playa de Oro International Airport">Manzanillo, Colima, Mexico</option>
+                                <option value="La Tabatière Airport(TC: CTU5)">Gros-Mécatina (La Tabatière), Quebec, Canada</option>
+                                <option value="Pasir Gudang Port Airport[1]">Pasir Gudang, Johor, Malaysia</option>
+                                <option value="Zalingei Airport[1]">Zalingei (Zalengei), Sudan</option>
+                                <option value="Sena Madureira Airport">Sena Madureira, Acre, Brazil</option>
+                                <option value="South Cariboo Regional Airport">108 Mile Ranch, British
+                            
+                            
+                            </datalist>
+                        </div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+  </section>
+
+  <section class="icons">
+    <div class=" d-flex flex-wrap col-md-12" style=" border-bottom: 1px solid grey;padding: 5px;justify-content: center;align-items: center;">
+        <div class="d-flex col-md-1 mx-1 ">
+            <a href="#"><img src="./facebook.png" class="img-fluid" alt=""></a>
+            <h5 class="custom-hidden">Facebook</h5>
+        </div>
+        <div  class="d-flex col-md-1 mx-1"> 
+            <a href=""><img src="./twitter.png"  class="img-fluid" alt=""></a>
+            <h5 class="custom-hidden">Twitter</h5>
+        </div>
+        <div  class="d-flex col-md-1 mx-1">
+            <a href=""><img src="./pinterest.png" class="img-fluid" alt=""></a>
+            <h5 class="custom-hidden">Pinterest</h5>
+        </div>
+        <div  class="d-flex col-md-1 mx-1"> 
+            <a href=""><img src="./instagram.png" class="img-fluid" alt=""></a>
+            <h5 class="custom-hidden">Instagram</h5>
+        </div>
+    </div>
+  </section>
+
+  <section class="travelled">
+     <div class="header col-md-12">
+        <h2>Most Travelled Flight Destinations </h2>
+        <h5>Discover the latest offers start planning your next trip.</h5>
+     </div>
+     <div class="col-md-12 flex-wrap d-flex" style="justify-content: space-evenly;">
+        <div class="plan m-1 col-md-3">
+            <div class="content d-flex col-md-12">
+                <div>
+                    <h3>Flights to Zimbabwe</h3>
+                    <h5>London- Harare</h5>
+                </div>
+                <div class="p-2">
+                    <i class="fa-solid fa-bookmark fa-xl" style="color: #d75f0f;"></i>
+                </div>
+            </div>
+            <div class="col-md-12" style="justify-content: center;align-items: center;padding: 1rem 1rem 1rem 1rem;display: flex;">
+                <img src="./harare.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-12 fare d-flex flex-wrap">
+                <div>
+                    <h5>Fare From</h5>
+                    <p><Strong>£ 797.54</Strong></p>
+                </div>
+                <div>
+                    <a href="">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="plan m-1 col-md-3">
+            <div class="content d-flex col-md-12">
+                <div>
+                    <h3>Flights to Zimbabwe</h3>
+                    <h5>London- Harare</h5>
+                </div>
+                <div class="p-2">
+                    <i class="fa-solid fa-bookmark fa-xl" style="color: #d75f0f;"></i>
+                </div>
+            </div>
+            <div class="col-md-12" style="justify-content: center;align-items: center;padding: 1rem 1rem 1rem 1rem;display: flex;">
+                <img src="./cuba.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-12 fare d-flex flex-wrap">
+                <div>
+                    <h5>Fare From</h5>
+                    <p><Strong>£ 797.54</Strong></p>
+                </div>
+                <div>
+                    <a href="">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="plan m-1 col-md-3">
+            <div class="content d-flex col-md-12">
+                <div>
+                    <h3>Flights to Zimbabwe</h3>
+                    <h5>London- Harare</h5>
+                </div>
+                <div class="p-2">
+                    <i class="fa-solid fa-bookmark fa-xl" style="color: #d75f0f;"></i>
+                </div>
+            </div>
+            <div class="col-md-12" style="justify-content: center;align-items: center;padding: 1rem 1rem 1rem 1rem;display: flex;">
+                <img src="./southafrica.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-12 fare d-flex flex-wrap">
+                <div>
+                    <h5>Fare From</h5>
+                    <p><Strong>£ 797.54</Strong></p>
+                </div>
+                <div>
+                    <a href="">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="plan m-1 col-md-3">
+            <div class="content d-flex col-md-12">
+                <div>
+                    <h3>Flights to Zimbabwe</h3>
+                    <h5>London- Harare</h5>
+                </div>
+                <div class="p-2">
+                    <i class="fa-solid fa-bookmark fa-xl" style="color: #d75f0f;"></i>
+                </div>
+            </div>
+            <div class="col-md-12" style="justify-content: center;align-items: center;padding: 1rem 1rem 1rem 1rem;display: flex;">
+                <img src="./newzealand.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-12 fare d-flex flex-wrap">
+                <div>
+                    <h5>Fare From</h5>
+                    <p><Strong>£ 797.54</Strong></p>
+                </div>
+                <div>
+                    <a href="">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="plan m-1 col-md-3">
+            <div class="content d-flex col-md-12">
+                <div>
+                    <h3>Flights to Zimbabwe</h3>
+                    <h5>London- Harare</h5>
+                </div>
+                <div class="p-2">
+                    <i class="fa-solid fa-bookmark fa-xl" style="color: #d75f0f;"></i>
+                </div>
+            </div>
+            <div class="col-md-12" style="justify-content: center;align-items: center;padding: 1rem 1rem 1rem 1rem;display: flex;">
+                <img src="./uae.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-12 fare d-flex flex-wrap">
+                <div>
+                    <h5>Fare From</h5>
+                    <p><Strong>£ 797.54</Strong></p>
+                </div>
+                <div>
+                    <a href="">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="plan m-1 col-md-3">
+            <div class="content d-flex col-md-12">
+                <div>
+                    <h3>Flights to Zimbabwe</h3>
+                    <h5>London- Harare</h5>
+                </div>
+                <div class="p-2">
+                    <i class="fa-solid fa-bookmark fa-xl" style="color: #d75f0f;"></i>
+                </div>
+            </div>
+            <div class="col-md-12" style="justify-content: center;align-items: center;padding: 1rem 1rem 1rem 1rem;display: flex;">
+                <img src="./brazil.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-12 fare d-flex flex-wrap">
+                <div>
+                    <h5>Fare From</h5>
+                    <p><Strong>£ 797.54</Strong></p>
+                </div>
+                <div>
+                    <a href="">Book Now</a>
+                </div>
+            </div>
+        </div>
+     </div>
+  </section>
+
+  <section class="business">
+    <!-- <div class="d-flex justify-content-center align-items-center"> -->
+        <div class="img-style position-relative col-md-12 ">
+            <div class="col-md-12" style="padding: 4%;">
+                <img src="./business.avif" class="img-fluid" alt="">
+            </div>
+            <div class="content position-absolute col-md-10">
+                <h2>Get the Best</h2>
+                <h1 style="font-weight: 700;">BUSINESS CLASS FLIGHTS</h1>
+                <p style="color: white;font-size: 1.25rem;">You deserve to travel the world in nothing but comfort while also staying within a budget.</p>
+                <a href="">FIND NOW</a>
+            </div>
+        </div>
+
+        <div class="col-md-6 position-relative justify-content-center" style="padding: 1% 0% 0% 4%;">
+            <h2>Explore Flight Deals From UK Airport</h2>
+            <h3>Looking for cheap flights or last minute deals from London?<h3>
+        </div>
+
+        <div class="col-md-12 flight m-2">
+            <div class="col-md-12 d-flex flex-wrap m-2" style="justify-content: space-evenly;">
+                <div class="col-md-3 m-2 p-4" style="background: #f0f3fa; border-radius: 5%;">
+                    <div class="heading-h5">
+                        Flights to Australia
+                    </div>
+                    <ul style="list-style-type: none; ">
+                        <li class="my-2"><a  style="color:black !important;" href="" class="line m-1">Flights to Brisbane <span class="border-radius">fr. £4917<sub>.10</sub></span></a></li>
+                        <li class="my-2"><a  style="color:black !important;" href="" class="line  m-1">Flights to Brisbane <span class="border-radius">fr. £2951<sub>.21</sub></span></a></li>
+                        <li class="my-2"><a  style="color:black !important;" href="" class="line  m-1">Flights to Brisbane <span class="border-radius">fr. £4045<sub>.40</sub></span></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 m-2 p-4" style="background: #f0f3fa; border-radius: 5%;">
+                    <div class="heading-h5">
+                        Flights to Australia
+                    </div>
+                    <ul style="list-style-type: none; ">
+                        <li class="my-2"><a  style="color:black !important;" href="" class="line  m-1">Flights to Brisbane <span class="border-radius">fr. £4917<sub>.10</sub></span></a></li>
+                        <li class="my-2"><a  style="color:black !important;" href="" class="line  m-1">Flights to Brisbane <span class="border-radius">fr. £2951<sub>.21</sub></span></a></li>
+                        <li class="my-2"><a  style="color:black !important;" href="" class="line  m-1">Flights to Brisbane <span class="border-radius">fr. £4045<sub>.40</sub></span></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 m-2 p-4" style="background: #f0f3fa; border-radius: 5%;">
+                    <div class="heading-h5">
+                        Flights to Australia
+                    </div>
+                    <ul style="list-style-type: none; ">
+                        <li class="my-2"><a  style="color:black !important;" href="" class="line  m-1">Flights to Brisbane <span class="border-radius">fr. £4917<sub>.10</sub></span></a></li>
+                        <li class="my-2"><a  style="color:black !important;" href="" class="line  m-1">Flights to Brisbane <span class="border-radius">fr. £2951<sub>.21</sub></span></a></li>
+                        <li class="my-2"><a  style="color:black !important;" href="" class="line  m-1">Flights to Brisbane <span class="border-radius">fr. £4045<sub>.40</sub></span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-12 d-flex flex-wrap" style="justify-content: space-evenly; margin-bottom: 1rem;">
+                <div class="col-md-3">
+                    <div class="accordion" id="accordionPanel1">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    Flights to Saudia Arabia
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <ul style="list-style-type: none; ">
+                                        <li class="my-2"><a style="color:black !important;" href="" class="line m-1">Flights to Brisbane <span class="border-radius">fr. £4917<sub>.10</sub></span></a></li>
+                                        <li class="my-2"><a style="color:black !important;" href="" class="line  m-1">Flights to Brisbane <span class="border-radius">fr. £2951<sub>.21</sub></span></a></li>
+                                        <li class="my-2"><a style="color:black !important;" href="" class="line  m-1">Flights to Brisbane <span class="border-radius">fr. £4045<sub>.40</sub></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="accordion" id="accordionPanel2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                    Flights to Another Destination
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <ul style="list-style-type: none; ">
+                                        <li class="my-2"><a style="color:black !important;" href="" class="line m-1">Flights to Another City <span class="border-radius">fr. £1234<sub>.56</sub></span></a></li>
+                                        <li class="my-2"><a style="color:black !important;" href="" class="line  m-1">Flights to Another City <span class="border-radius">fr. £789<sub>.01</sub></span></a></li>
+                                        <li class="my-2"><a style="color:black !important;" href="" class="line  m-1">Flights to Another City <span class="border-radius">fr. £2345<sub>.67</sub></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-md-3">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+                                Flights to Saudia Arabia
+                            </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <ul style="list-style-type: none; ">
+                                    <li class="my-2"><a  style="color:black !important;" href="" class="line m-1">Flights to Brisbane <span class="border-radius">fr. £4917<sub>.10</sub></span></a></li>
+                                    <li class="my-2"><a  style="color:black !important;" href="" class="line  m-1">Flights to Brisbane <span class="border-radius">fr. £2951<sub>.21</sub></span></a></li>
+                                    <li class="my-2"><a  style="color:black !important;" href="" class="line  m-1">Flights to Brisbane <span class="border-radius">fr. £4045<sub>.40</sub></span></a></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 d-flex flex-wrap" style="justify-content: space-evenly;">
+                <div class="col-md-3">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                Flights to Saudia Arabia
+                            </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <ul style="list-style-type: none; ">
+                                    <li class="my-2"><a  style="color:black !important;" href="" class="line m-1">Flights to Brisbane <span class="border-radius">fr. £4917<sub>.10</sub></span></a></li>
+                                    <li class="my-2"><a  style="color:black !important;" href="" class="line  m-1">Flights to Brisbane <span class="border-radius">fr. £2951<sub>.21</sub></span></a></li>
+                                    <li class="my-2"><a  style="color:black !important;" href="" class="line  m-1">Flights to Brisbane <span class="border-radius">fr. £4045<sub>.40</sub></span></a></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                Flights to Saudia Arabia
+                            </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <ul style="list-style-type: none; ">
+                                    <li class="my-2"><a  style="color:black !important;" href="" class="line m-1">Flights to Brisbane <span class="border-radius">fr. £4917<sub>.10</sub></span></a></li>
+                                    <li class="my-2"><a  style="color:black !important;" href="" class="line  m-1">Flights to Brisbane <span class="border-radius">fr. £2951<sub>.21</sub></span></a></li>
+                                    <li class="my-2"><a  style="color:black !important;" href="" class="line  m-1">Flights to Brisbane <span class="border-radius">fr. £4045<sub>.40</sub></span></a></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                Flights to Saudia Arabia
+                            </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <ul style="list-style-type: none; ">
+                                    <li class="my-2"><a  style="color:black !important;" href="" class="line m-1">Flights to Brisbane <span class="border-radius">fr. £4917<sub>.10</sub></span></a></li>
+                                    <li class="my-2"><a  style="color:black !important;" href="" class="line  m-1">Flights to Brisbane <span class="border-radius">fr. £2951<sub>.21</sub></span></a></li>
+                                    <li class="my-2"><a  style="color:black !important;" href="" class="line  m-1">Flights to Brisbane <span class="border-radius">fr. £4045<sub>.40</sub></span></a></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    <!-- </div> -->
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- <section class="form">
+    <div class="position-relative">
+        <div class="start-50 top-50 col-md-12 content">
+             <p class="fw-bold text-white fs-1 col-md-12">Travel Enjoy Life</p>
+             <div class="rounded p-3 bg-cp col-md-12">
+                <div class="d-flex align-items-center col-md-3 flex-wrap">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" >
+                        <label class="form-check-label fw-bold fs-7" for="flexRadioDisabled">
+                        Return
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled" checked>
+                        <label class="form-check-label fw-bold fs-7" for="flexRadioCheckedDisabled">
+                            One Way
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled" checked >
+                        <label class="form-check-label fw-bold fs-7" for="flexRadioCheckedDisabled">
+                            Multi-City
+                        </label>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center py-2 col-md-10 flex-wrap">
+                    <div class="col-md-2">
+                        <label for="exampleDataList" class="form-label fw-bold fs-8 m-0">To</label>
+                        <input class="form-control inp-height inp-width" list="datalistOptions" id="exampleDataList" placeholder="Airport or City">
+                        <datalist id="datalistOptions">
+                                <option value="Alice Arm/Silver City Water Aerodrome(TC: CAC3)">Alice Arm, British Columbia, Canada</option>
+                                <option value="York Landing Airport">York Landing, Manitoba, Canada</option>
+                                <option value="Zadar Airport">Zadar, Croatia</option>
+                                <option value="Franjo Tuđman Airport">Zagreb, Croatia</option>
+                                <option value="Zahedan Airport">Zahedan, Iran</option>
+                                <option value="Zaranj Airport">Zaranj, Afghanistan</option>
+                                <option value="Pichoy Airport">Valdivia, Chile</option>
+                                <option value="Zamboanga International Airport">Zamboanga City, Philippines</option>
+                                <option value="Cahors - Lalbenque Airport">Cahors, Midi-Pyrénées, France</option>
+                                <option value="Zaria Airport">Zaria, Nigeria</option>
+                                <option value="Zhaotong Airport">Zhaotong, Yunnan, China</option>
+                                <option value="Zaragoza Airport">Zaragoza, Aragon, Spain</option>
+                                <option value="Zábřeh Airport">Dolní Benešov, Czech Republic</option>
+                                <option value="Bathurst Airport">Bathurst, New Brunswick, Canada</option>
+                                <option value="Žabljak Airport">Žabljak, Montenegro</option>
+                                <option value="Biloela Airport">Biloela, Queensland, Australia</option>
+                                <option value="Roland-Désourdy Airport">Bromont, Quebec, Canada</option>
+                                <option value="Bowen Airport">Bowen, Queensland, Australia</option>
+                                <option value="Konarak Airport">Chabahar (Chah Bahar), Iran</option>
+                                <option value="Sayaboury Airport">Sainyabuli (Sayaboury), Laos</option>
+                                <option value="General Leobardo C. Ruiz International Airport">Zacatecas City, Zacatecas, Mexico</option>
+                                <option value="La Araucanía Airport">Temuco, Chile</option>
+                                <option value="Bern Railway Station">Bern, Switzerland</option>
+                                <option value="Dalma Airport">Dalma Island (Delma Island), United Arab Emirates</option>
+                                <option value="Secunda Airport">Secunda, South Africa</option>
+                                <option value="Senggo Airport">Senggo, Indonesia</option>
+                                <option value="Bella Bella (Campbell Island) Airport">Bella Bella, British Columbia, Canada</option>
+                                <option value="Eastmain River Airport">Eastmain, Quebec, Canada</option>
+                                <option value="Zenag Airport[1]">Zenag, Papua New Guinea</option>
+                                <option value="Zero Airport (Ziro Airport)">Ziro, Arunachal Pradesh, India</option>
+                                <option value="Faro Airport">Faro, Yukon, Canada</option>
+                                <option value="Fond-du-Lac Airport">Fond-du-Lac, Saskatchewan, Canada</option>
+                                <option value="Fort McPherson Airport">Fort McPherson, Northwest Territories, Canada</option>
+                                <option value="Tulita Airport">Tulita, Northwest Territories, Canada</option>
+                                <option value="Fairview Airport(TC: CEB5)">Fairview, Alberta, Canada</option>
+                                <option value="Grand Forks Airport">Grand Forks, British Columbia, Canada</option>
+                                <option value="Gods River Airport">Gods River, Manitoba, Canada</option>
+                                <option value="South Galway Airport">South Galway Station, Queensland, Australia</option>
+                                <option value="Ngoma Airport">Ngoma, Zambia</option>
+                                <option value="Little Grand Rapids Airport">Little Grand Rapids, Manitoba, Canada</option>
+                                <option value="La Romaine Airport(TC: CTT5)">La Romaine, Quebec, Canada</option>
+                                <option value="Gaua Airport">Gaua, Vanuatu</option>
+                                <option value="Zhanjiang Wuchuan Airport">Zhanjiang, Guangdong, China</option>
+                                <option value="Shamshernagar Airport">Shamshernagar, Bangladesh</option>
+                                <option value="High Prairie Airport">High Prairie, Alberta, Canada</option>
+                                <option value="Geneva Railway Station">Geneva, Switzerland</option>
+                                <option value="Zhongwei Shapotou Airport(Zhongwei Xiangshan Airport)">Zhongwei, Ningxia, China</option>
+                                <option value="Ramenskoye Airport[1](Zhukovsky Airport)">Zhukovsky, Moscow Oblast, Russia</option>
+                                <option value="Victoria Airport">Victoria, Chile</option>
+                                <option value="Ziguinchor Airport">Ziguinchor, Senegal</option>
+                                <option value="Ixtapa-Zihuatanejo International Airport">Ixtapa/Zihuatanejo, Guerrero, Mexico</option>
+                                <option value="Alzintan Airport[1]">Zintan, Libya</option>
+                                <option value="Zhigansk Airport[1]">Zhigansk, Yakutia, Russia</option>
+                                <option value="Zamzama Airport[1]">Zamzama, Pakistan</option>
+                                <option value="Jenpeg Airport">Jenpeg, Manitoba, Canada</option>
+                                <option value="Swan River Airport">Swan River, Manitoba, Canada</option>
+                                <option value="Tanjung Pelepas Port Airport[1]">Tanjung Pelepas, Johor, Malaysia</option>
+                                <option value="Kasaba Bay Airport">Kasaba Bay, Zambia</option>
+                                <option value="Kashechewan Airport">Kashechewan, Ontario, Canada</option>
+                                <option value="Kegaska Airport(TC: CTK6)">Kegaska (Kegashka), Quebec, Canada</option>
+                                <option value="Zyryanka Airport">Zyryanka, Yakutia, Russia</option>
+                                <option value="Playa de Oro International Airport">Manzanillo, Colima, Mexico</option>
+                                <option value="La Tabatière Airport(TC: CTU5)">Gros-Mécatina (La Tabatière), Quebec, Canada</option>
+                                <option value="Pasir Gudang Port Airport[1]">Pasir Gudang, Johor, Malaysia</option>
+                                <option value="Zalingei Airport[1]">Zalingei (Zalengei), Sudan</option>
+                                <option value="Sena Madureira Airport">Sena Madureira, Acre, Brazil</option>
+                                <option value="South Cariboo Regional Airport">108 Mile Ranch, British
+                            
+                            
+                        </datalist>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="exampleDataList1" class="form-label fw-bold fs-8 m-0">From</label>
+                        <input class="form-control inp-height inp-width" list="datalistOptions1" id="exampleDataList1" placeholder="Airport or City">
+                        <datalist id="datalistOptions1">
+                                <option value="Alice Arm/Silver City Water Aerodrome(TC: CAC3)">Alice Arm, British Columbia, Canada</option>
+                                <option value="York Landing Airport">York Landing, Manitoba, Canada</option>
+                                <option value="Zadar Airport">Zadar, Croatia</option>
+                                <option value="Franjo Tuđman Airport">Zagreb, Croatia</option>
+                                <option value="Zahedan Airport">Zahedan, Iran</option>
+                                <option value="Zaranj Airport">Zaranj, Afghanistan</option>
+                                <option value="Pichoy Airport">Valdivia, Chile</option>
+                                <option value="Zamboanga International Airport">Zamboanga City, Philippines</option>
+                                <option value="Cahors - Lalbenque Airport">Cahors, Midi-Pyrénées, France</option>
+                                <option value="Zaria Airport">Zaria, Nigeria</option>
+                                <option value="Zhaotong Airport">Zhaotong, Yunnan, China</option>
+                                <option value="Zaragoza Airport">Zaragoza, Aragon, Spain</option>
+                                <option value="Zábřeh Airport">Dolní Benešov, Czech Republic</option>
+                                <option value="Bathurst Airport">Bathurst, New Brunswick, Canada</option>
+                                <option value="Žabljak Airport">Žabljak, Montenegro</option>
+                                <option value="Biloela Airport">Biloela, Queensland, Australia</option>
+                                <option value="Roland-Désourdy Airport">Bromont, Quebec, Canada</option>
+                                <option value="Bowen Airport">Bowen, Queensland, Australia</option>
+                                <option value="Konarak Airport">Chabahar (Chah Bahar), Iran</option>
+                                <option value="Sayaboury Airport">Sainyabuli (Sayaboury), Laos</option>
+                                <option value="General Leobardo C. Ruiz International Airport">Zacatecas City, Zacatecas, Mexico</option>
+                                <option value="La Araucanía Airport">Temuco, Chile</option>
+                                <option value="Bern Railway Station">Bern, Switzerland</option>
+                                <option value="Dalma Airport">Dalma Island (Delma Island), United Arab Emirates</option>
+                                <option value="Secunda Airport">Secunda, South Africa</option>
+                                <option value="Senggo Airport">Senggo, Indonesia</option>
+                                <option value="Bella Bella (Campbell Island) Airport">Bella Bella, British Columbia, Canada</option>
+                                <option value="Eastmain River Airport">Eastmain, Quebec, Canada</option>
+                                <option value="Zenag Airport[1]">Zenag, Papua New Guinea</option>
+                                <option value="Zero Airport (Ziro Airport)">Ziro, Arunachal Pradesh, India</option>
+                                <option value="Faro Airport">Faro, Yukon, Canada</option>
+                                <option value="Fond-du-Lac Airport">Fond-du-Lac, Saskatchewan, Canada</option>
+                                <option value="Fort McPherson Airport">Fort McPherson, Northwest Territories, Canada</option>
+                                <option value="Tulita Airport">Tulita, Northwest Territories, Canada</option>
+                                <option value="Fairview Airport(TC: CEB5)">Fairview, Alberta, Canada</option>
+                                <option value="Grand Forks Airport">Grand Forks, British Columbia, Canada</option>
+                                <option value="Gods River Airport">Gods River, Manitoba, Canada</option>
+                                <option value="South Galway Airport">South Galway Station, Queensland, Australia</option>
+                                <option value="Ngoma Airport">Ngoma, Zambia</option>
+                                <option value="Little Grand Rapids Airport">Little Grand Rapids, Manitoba, Canada</option>
+                                <option value="La Romaine Airport(TC: CTT5)">La Romaine, Quebec, Canada</option>
+                                <option value="Gaua Airport">Gaua, Vanuatu</option>
+                                <option value="Zhanjiang Wuchuan Airport">Zhanjiang, Guangdong, China</option>
+                                <option value="Shamshernagar Airport">Shamshernagar, Bangladesh</option>
+                                <option value="High Prairie Airport">High Prairie, Alberta, Canada</option>
+                                <option value="Geneva Railway Station">Geneva, Switzerland</option>
+                                <option value="Zhongwei Shapotou Airport(Zhongwei Xiangshan Airport)">Zhongwei, Ningxia, China</option>
+                                <option value="Ramenskoye Airport[1](Zhukovsky Airport)">Zhukovsky, Moscow Oblast, Russia</option>
+                                <option value="Victoria Airport">Victoria, Chile</option>
+                                <option value="Ziguinchor Airport">Ziguinchor, Senegal</option>
+                                <option value="Ixtapa-Zihuatanejo International Airport">Ixtapa/Zihuatanejo, Guerrero, Mexico</option>
+                                <option value="Alzintan Airport[1]">Zintan, Libya</option>
+                                <option value="Zhigansk Airport[1]">Zhigansk, Yakutia, Russia</option>
+                                <option value="Zamzama Airport[1]">Zamzama, Pakistan</option>
+                                <option value="Jenpeg Airport">Jenpeg, Manitoba, Canada</option>
+                                <option value="Swan River Airport">Swan River, Manitoba, Canada</option>
+                                <option value="Tanjung Pelepas Port Airport[1]">Tanjung Pelepas, Johor, Malaysia</option>
+                                <option value="Kasaba Bay Airport">Kasaba Bay, Zambia</option>
+                                <option value="Kashechewan Airport">Kashechewan, Ontario, Canada</option>
+                                <option value="Kegaska Airport(TC: CTK6)">Kegaska (Kegashka), Quebec, Canada</option>
+                                <option value="Zyryanka Airport">Zyryanka, Yakutia, Russia</option>
+                                <option value="Playa de Oro International Airport">Manzanillo, Colima, Mexico</option>
+                                <option value="La Tabatière Airport(TC: CTU5)">Gros-Mécatina (La Tabatière), Quebec, Canada</option>
+                                <option value="Pasir Gudang Port Airport[1]">Pasir Gudang, Johor, Malaysia</option>
+                                <option value="Zalingei Airport[1]">Zalingei (Zalengei), Sudan</option>
+                                <option value="Sena Madureira Airport">Sena Madureira, Acre, Brazil</option>
+                                <option value="South Cariboo Regional Airport">108 Mile Ranch, British
+                            
+                            
+                        </datalist>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="" class="fw-bold fs-8">Depart</label>
+                        <input type="date" name="" id="" class="form-control inp-height">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="" class="fw-bold fs-8">Return</label>
+                        <input type="date" name="" id="" class="form-control inp-height">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="" class="fw-bold fs-8">Cabin Class & Travellers</label>
+                        <select class="form-select inp-height inp-width" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="d-flex align-items-center justify-content-between flex-wrap">
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label fw-bold fs-8" for="flexCheckDefault">
+                                Add nearby airports
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                            <label class="form-check-label fw-bold fs-8" for="flexCheckChecked">
+                                Add nearby airports
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                            <label class="form-check-label fw-bold fs-8" for="flexCheckChecked">
+                                Direct Flights Only
+                            </label>
+                        </div>
+                    </div>
+                    <div class="btn btn-dark fw-bold btn-lg inp-width">Search Flights</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   </section> -->
+
+<!-- <div class="d-block d-xl-none rounded-2 bg-cp py-3 px-3">
+          <div class="d-flex align-items-center py-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" >
+                    <label class="form-check-label fw-bold fs-7" for="flexRadioDisabled">
+                        Return
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled" checked>
+                    <label class="form-check-label fw-bold fs-7" for="flexRadioCheckedDisabled">
+                        One Way
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled" checked>
+                    <label class="form-check-label fw-bold fs-7" for="flexRadioCheckedDisabled">
+                        Multi-City
+                    </label>
+                  </div>
+          </div>
+          <div>
+            <label for="exampleDataList" class="form-label fw-bold fs-8 m-0">To</label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Airport or City">
+        <datalist>   
+          <option value="Alice Arm/Silver City Water Aerodrome(TC: CAC3)"></option>
+          <option value="York Landing Airport"></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+            </datalist>
+        </div>
+        <div class="form-check py-2">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label fw-bold fs-8" for="flexCheckChecked">
+                Add nearby airports
+            </label>
+        </div>
+        <div>
+            <label for="exampleDataList" class="form-label fw-bold fs-8 m-0">From</label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Airport or City">
+            <datalist id="datalistOptions">
+            <option value="San Francisco">
+            <option value="New York">
+            <option value="Seattle">
+            <option value="Los Angeles">
+            <option value="Chicago">
+            </datalist>
+        </div>
+        <div class="form-check py-2">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label fw-bold fs-8" for="flexCheckChecked">
+                Add nearby airports
+            </label>
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+            <div>
+                <label for="" class="fw-bold fs-8 date-wid">Depart</label>
+                <input type="date" name="" id="" class="form-control inp-height">
+            </div>
+            <div>
+                <label for="" class="fw-bold fs-8 date-wid">Return</label>
+                <input type="date" name="" id="" class="form-control inp-height">
+            </div>
+        </div>
+        <div class="py-2">
+            <div>
+                <label for="" class="fw-bold fs-8">Cabin Class & Travellers</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+            </div>
+            <div class="form-check py-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label fw-bold fs-8" for="flexCheckChecked">
+                    Direct flights only
+                </label>
+            </div>
+        </div>
+        <div class="py-3">
+           <div class="btn btn-dark fw-bold form-control">
+            Search Flights 
+           </div>
+ </div> -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="./script.js"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<script src="https://cdn.example.com/widget-library.js"></script>
+</body>
+ </html>
